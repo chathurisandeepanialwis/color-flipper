@@ -1,29 +1,32 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>Color Flipper</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css"> 
 </head>
 <body>
-  <nav>
-    <div class="nav-center">
-      <h1>Color Flipper</h1>
-      <ul>
-        <li><a href="index.html">Simple</a></li>
-        <li><a href="hex.html">Hex</a></li>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <h4 class="text-white">Color Flipper</h4>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Simple</a></li>
+        <li class="nav-item"><a class="nav-link" href="hex.html">Hex</a></li>
       </ul>
     </div>
   </nav>
+  
   <main>
-    <div class="container">
-      <h3>Background Color: <span class="color" id="color"></span></h3>
-      <button class="btn-hero btn" id="btn">Click Me</button>
+    <div class="container text-center mt-5">
+      <h3>Background Color: <span class="color" id="color">#FFFFFF</span></h3>
+      <div class="mt-3">
+        <button class="btn btn-primary" id="btn">Click Me</button>
+      </div>
     </div>
   </main>
-  
+
   <script src="app.js"></script>
 </body>
 </html>
